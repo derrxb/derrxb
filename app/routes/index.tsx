@@ -16,60 +16,70 @@ export default function Index() {
   }, [inView]);
 
   return (
-    <div className="flex h-full" ref={ref}>
-      <motion.div
-        className="flex w-1/2 items-center justify-center p-8 px-24 dark:bg-black"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
-        <motion.h1
-          className="m-0 text-6xl font-bold dark:text-white"
-          initial={{ paddingTop: 48 }}
-          animate={{ paddingTop: 0 }}
-          transition={{ duration: 1 }}
+    <>
+      <div className="flex h-full" ref={ref}>
+        <motion.div
+          className="flex w-1/2 items-center justify-center p-8 px-24 dark:bg-black"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
         >
-          I capture stories and build software with{" "}
-          <motion.span className="text-yellow-500">photography</motion.span> and
-          <motion.span className="text-green-500 pl-2">code</motion.span>.
-        </motion.h1>
-      </motion.div>
-
-      <div className="w-1/2">
-        <picture className="w-full">
-          <motion.source
-            src={coverDark}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          <motion.h1
+            className="m-0 text-6xl font-bold dark:text-white"
+            initial={{ paddingTop: 48 }}
+            animate={{ paddingTop: 0 }}
             transition={{ duration: 1 }}
-            className={"h-screen w-full object-cover hidden dark:inline"}
-          />
+          >
+            I capture stories and build software with{" "}
+            <motion.span className="text-yellow-500">photography</motion.span>{" "}
+            and
+            <motion.span className="text-green-500 pl-2">code</motion.span>.
+          </motion.h1>
+        </motion.div>
 
-          <motion.img
-            src={coverDark}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className={"h-screen w-full object-cover hidden dark:inline"}
-          />
+        <div className="w-1/2">
+          <picture className="w-full">
+            <motion.source
+              src={coverDark}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className={"h-screen w-full object-cover hidden dark:inline"}
+            />
 
-          <motion.source
-            src={coverLight}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className={"h-screen w-full object-cover dark:hidden"}
-          />
+            <motion.img
+              src={coverDark}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className={"h-screen w-full object-cover hidden dark:inline"}
+            />
 
-          <motion.img
-            src={coverLight}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className={"h-screen w-full object-cover dark:hidden"}
-          />
-        </picture>
+            <motion.source
+              src={coverLight}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className={"h-screen w-full object-cover dark:hidden"}
+            />
+
+            <motion.img
+              src={coverLight}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className={"h-screen w-full object-cover dark:hidden"}
+            />
+          </picture>
+        </div>
       </div>
-    </div>
+
+      <section title="stories">
+        <div>
+          <div className="h-80 w-64 bg-gray-100"></div>
+          <h3>Cahal Pech</h3>
+        </div>
+      </section>
+    </>
   );
 }

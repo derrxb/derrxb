@@ -1,9 +1,9 @@
 {
-  "version": "67d54431",
+  "version": "5d33f107",
   "entry": {
-    "module": "/build/entry.client-6VLT5WBP.js",
+    "module": "/build/entry.client-4P4HWPYK.js",
     "imports": [
-      "/build/_shared/chunk-QZIOPK7V.js",
+      "/build/_shared/chunk-H44NRW3S.js",
       "/build/_shared/chunk-5OQ3QANQ.js"
     ]
   },
@@ -11,9 +11,9 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-EGHDUIFY.js",
+      "module": "/build/root-NY5XE7I2.js",
       "hasAction": false,
-      "hasLoader": false,
+      "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     },
@@ -21,7 +21,7 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-3ONDFZAN.js",
+      "module": "/build/routes/index-OJUV7XAT.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -31,32 +31,33 @@
       "id": "routes/photography",
       "parentId": "root",
       "path": "photography",
-      "module": "/build/routes/photography-TUBKZP4L.js",
+      "module": "/build/routes/photography-ONSJHDQI.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     },
-    "routes/photography/$photographyId": {
-      "id": "routes/photography/$photographyId",
-      "parentId": "routes/photography",
-      "path": ":photographyId",
-      "module": "/build/routes/photography/$photographyId-FSOCT6RE.js",
+    "routes/stories/$storyId": {
+      "id": "routes/stories/$storyId",
+      "parentId": "root",
+      "path": "stories/:storyId",
+      "module": "/build/routes/stories/$storyId-ZCHO2XJK.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     },
-    "routes/photography/index": {
-      "id": "routes/photography/index",
-      "parentId": "routes/photography",
+    "routes/stories/index": {
+      "id": "routes/stories/index",
+      "parentId": "root",
+      "path": "stories",
       "index": true,
-      "module": "/build/routes/photography/index-EUJANDPP.js",
+      "module": "/build/routes/stories/index-VNWZ7BLJ.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-67D54431.js"
+  "url": "/build/manifest-5D33F107.js"
 }
