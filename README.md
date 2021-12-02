@@ -1,41 +1,17 @@
-# Welcome to Remix!
+**Hi! I'm Derrick (施德睿)**
 
-- [Remix Docs](https://remix.run/docs)
+I'm a software developer and a photographer based in Hsinchu, Taiwan. I build things and take pictures. I'm a graduate student in NTHU's IMPISA program and I'm a part of [AI Lab](http://ai.cs.nthu.edu.tw/). Currently I'm a part-time software developer for Aillio, a coffee startup based in Taipei.
 
-## Fly Setup
+In my free time, I like to roam to capture moments. I enjoy landscape and portrait photography. While I currently don't have any human kids, I do have a wonderful little Siamese cat, Lola 🐈 (I also enjoy taking pictures of her too).
 
-1. [Install Fly](https://fly.io/docs/getting-started/installing-flyctl/)
+You can find me online on my handle **_@derrxb_**. But here are a few links that you might be interested in:
 
-2. Sign up and log in to Fly
+> - [Instagram](https://instagram.com/derrxb) - photos, photos, and more photos 😉
+> - [GitHub](https://github.com/derrxb) [Here] - Projects I'm currently working on
+> - [Derrxb.com](https://derrxb.com) - My personal website for my travels and (hopefully) software development thoughts
 
-   ```sh
-   flyctl auth signup
-   ```
+你好，我是施德睿。
 
-3. Setup Fly. It might ask if you want to deploy, say no since you haven't built the app yet.
+我住在台灣新竹市。我是軟件工程師和攝影師。我是清大學生。
 
-   ```sh
-   flyctl launch
-   ```
-
-## Development
-
-From your terminal:
-
-```sh
-npm run dev
-```
-
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-If you've followed the setup instructions already, especially the REMIX_TOKEN environment variable step, all you need to do is run this:
-
-```sh
-npm run deploy
-```
-
-You can run `flyctl info` to get the url and ip address of your server.
-
-Check out the [fly docs](https://fly.io/docs/getting-started/node/) for more information.
+有空的時後，我喜歡旅行，照相，和看電影。
