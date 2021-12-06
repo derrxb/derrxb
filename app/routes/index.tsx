@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "remix";
 import coverDark from "../../public/images/cover-dark.jpg";
 import coverLight from "../../public/images/cover-light.jpg";
 
@@ -31,9 +32,14 @@ export default function Index() {
             transition={{ duration: 1 }}
           >
             I capture stories and build software with{" "}
-            <motion.span className="text-yellow-500">photography</motion.span>{" "}
+            <motion.span className="text-yellow-500 hover:underline">
+              <Link to="/stories">photography</Link>
+            </motion.span>{" "}
             and
-            <motion.span className="text-green-500 pl-2">code</motion.span>.
+            <motion.span className="text-green-500 pl-2 hover:underline">
+              <Link to="/software">code</Link>
+            </motion.span>
+            .
           </motion.h1>
         </motion.div>
 
@@ -73,13 +79,6 @@ export default function Index() {
           </picture>
         </div>
       </div>
-
-      <section title="stories">
-        <div>
-          <div className="h-80 w-64 bg-gray-100"></div>
-          <h3>Cahal Pech</h3>
-        </div>
-      </section>
     </>
   );
 }

@@ -127,7 +127,7 @@ var Mode = () => {
 var mode_default = Mode;
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-SCXFEYG5.css";
+var app_default = "/build/_assets/app-7IU6ZLPD.css";
 
 // app/utils/theme.server.tsx
 var import_remix2 = __toModule(require("remix"));
@@ -250,6 +250,7 @@ __export(routes_exports, {
 var import_framer_motion = __toModule(require("framer-motion"));
 var import_react2 = __toModule(require("react"));
 var import_react_intersection_observer = __toModule(require("react-intersection-observer"));
+var import_remix6 = __toModule(require("remix"));
 
 // public/images/cover-dark.jpg
 var cover_dark_default = "/build/_assets/cover-dark-DBEAIXQF.jpg";
@@ -282,10 +283,14 @@ function Index() {
     animate: { paddingTop: 0 },
     transition: { duration: 1 }
   }, "I capture stories and build software with", " ", /* @__PURE__ */ import_react2.default.createElement(import_framer_motion.motion.span, {
-    className: "text-yellow-500"
-  }, "photography"), " ", "and", /* @__PURE__ */ import_react2.default.createElement(import_framer_motion.motion.span, {
-    className: "text-green-500 pl-2"
-  }, "code"), ".")), /* @__PURE__ */ import_react2.default.createElement("div", {
+    className: "text-yellow-500 hover:underline"
+  }, /* @__PURE__ */ import_react2.default.createElement(import_remix6.Link, {
+    to: "/stories"
+  }, "photography")), " ", "and", /* @__PURE__ */ import_react2.default.createElement(import_framer_motion.motion.span, {
+    className: "text-green-500 pl-2 hover:underline"
+  }, /* @__PURE__ */ import_react2.default.createElement(import_remix6.Link, {
+    to: "/software"
+  }, "code")), ".")), /* @__PURE__ */ import_react2.default.createElement("div", {
     className: "w-1/2"
   }, /* @__PURE__ */ import_react2.default.createElement("picture", {
     className: "w-full"
@@ -313,11 +318,7 @@ function Index() {
     animate: { opacity: 1 },
     transition: { duration: 1 },
     className: "h-screen w-full object-cover dark:hidden"
-  })))), /* @__PURE__ */ import_react2.default.createElement("section", {
-    title: "stories"
-  }, /* @__PURE__ */ import_react2.default.createElement("div", null, /* @__PURE__ */ import_react2.default.createElement("div", {
-    className: "h-80 w-64 bg-gray-100"
-  }), /* @__PURE__ */ import_react2.default.createElement("h3", null, "Cahal Pech"))));
+  })))));
 }
 
 // <stdin>
