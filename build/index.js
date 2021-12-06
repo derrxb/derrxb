@@ -127,7 +127,7 @@ var Mode = () => {
 var mode_default = Mode;
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-7IU6ZLPD.css";
+var app_default = "/build/_assets/app-YBG3U5H7.css";
 
 // app/utils/theme.server.tsx
 var import_remix2 = __toModule(require("remix"));
@@ -177,13 +177,13 @@ function App() {
     className: "flex ml-auto items-center"
   }, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix3.Link, {
     to: "/stories",
-    className: "font-semibold text-gray-600 px-4 hover:text-gray-800 dark:text-white dark:hover:bg-gray-300"
+    className: "font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
   }, "Stories")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix3.Link, {
     to: "/software",
-    className: "font-semibold text-gray-600 px-4 hover:text-gray-800 dark:text-white dark:hover:bg-gray-300"
+    className: "font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
   }, "Software")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix3.Link, {
     to: "/software",
-    className: "font-semibold text-gray-600 px-4 hover:text-gray-800 dark:text-white dark:hover:bg-gray-300"
+    className: "font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
   }, "About")), /* @__PURE__ */ React.createElement(mode_default, null))), /* @__PURE__ */ React.createElement(import_remix3.Outlet, null), /* @__PURE__ */ React.createElement(import_remix3.Scripts, null), process.env.NODE_ENV === "development" ? /* @__PURE__ */ React.createElement(import_remix3.LiveReload, null) : null));
 }
 

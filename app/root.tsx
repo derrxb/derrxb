@@ -52,7 +52,7 @@ export default function App() {
             <li>
               <Link
                 to="/stories"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-800 dark:text-white dark:hover:bg-gray-300"
+                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
               >
                 Stories
               </Link>
@@ -61,7 +61,7 @@ export default function App() {
             <li>
               <Link
                 to="/software"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-800 dark:text-white dark:hover:bg-gray-300"
+                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
               >
                 Software
               </Link>
@@ -70,7 +70,7 @@ export default function App() {
             <li>
               <Link
                 to="/software"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-800 dark:text-white dark:hover:bg-gray-300"
+                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
               >
                 About
               </Link>
