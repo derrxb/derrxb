@@ -1,17 +1,17 @@
 {
-  "version": "5d33f107",
+  "version": "9f43b99d",
   "entry": {
-    "module": "/build/entry.client-4P4HWPYK.js",
+    "module": "/build/entry.client-DAIIFQDZ.js",
     "imports": [
-      "/build/_shared/chunk-H44NRW3S.js",
-      "/build/_shared/chunk-5OQ3QANQ.js"
+      "/build/_shared/chunk-HACQJGPY.js",
+      "/build/_shared/chunk-YTGA4KPU.js"
     ]
   },
   "routes": {
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-NY5XE7I2.js",
+      "module": "/build/root-YOMDXFLS.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
@@ -21,7 +21,7 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-OJUV7XAT.js",
+      "module": "/build/routes/index-3CLW4EHA.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -31,7 +31,7 @@
       "id": "routes/photography",
       "parentId": "root",
       "path": "photography",
-      "module": "/build/routes/photography-ONSJHDQI.js",
+      "module": "/build/routes/photography-6WZPDKX5.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -41,7 +41,7 @@
       "id": "routes/stories/$storyId",
       "parentId": "root",
       "path": "stories/:storyId",
-      "module": "/build/routes/stories/$storyId-ZCHO2XJK.js",
+      "module": "/build/routes/stories/$storyId-M2HL2NT2.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
@@ -52,12 +52,12 @@
       "parentId": "root",
       "path": "stories",
       "index": true,
-      "module": "/build/routes/stories/index-VNWZ7BLJ.js",
+      "module": "/build/routes/stories/index-MVYOR6ZD.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-5D33F107.js"
+  "url": "/build/manifest-9F43B99D.js"
 }
