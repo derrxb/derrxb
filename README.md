@@ -1,17 +1,13 @@
 **Hi! I'm Derrick (施德睿)**
 
-I'm a software developer and a photographer based in Hsinchu, Taiwan. I build things and take pictures. I'm a graduate student in NTHU's IMPISA program and I'm a part of [AI Lab](http://ai.cs.nthu.edu.tw/). Currently I'm a part-time software developer for Aillio, a coffee startup based in Taipei.
+I'm a full-stack developer and photographer based in Taipei, Taiwan. I build things and tell stories. I have a Master's in Data Science from National Tsing Hua University in Hsinchu, Taiwan. I graduated from Professor Von-Wun Soo's [AI Lab](http://ai.cs.nthu.edu.tw/).
 
-In my free time, I like to roam to capture moments. I enjoy landscape and portrait photography. While I currently don't have any human kids, I do have a wonderful little Siamese cat, Lola 🐈 (I also enjoy taking pictures of her too).
+I'm currently working at [Aillio](https://aillio.com/) building [Roast.World](https://roast.world/). Previously, I worked at [Belizing.com](https://belizing.com/) building Belizing Payments. I've worked with both back-end and front-end systems using languages and tools such as Ruby, Typescript, JavaScript, React, Ruby on Rails, and a large number of other tools.
+
+In my free time, I like to roam to capture stories. I enjoy landscape and portrait photography. While I currently don't have any human kids, I do have a wonderful little Siamese cat, Lola 🐈 back in Belize and two cats in Taiwan name Dian Dian and Hua Hua.
 
 You can find me online on my handle **_@derrxb_**. But here are a few links that you might be interested in:
 
 > - [Instagram](https://instagram.com/derrxb) - photos, photos, and more photos 😉
 > - [GitHub](https://github.com/derrxb) [Here] - Projects I'm currently working on
 > - [Derrxb.com](https://derrxb.com) - My personal website for my travels and (hopefully) software development thoughts
-
-你好，我是施德睿。
-
-我住在台灣新竹市。我是軟件工程師和攝影師。我是清大學生。
-
-有空的時後，我喜歡旅行，照相，和看電影。
