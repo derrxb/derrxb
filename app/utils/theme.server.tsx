@@ -7,6 +7,7 @@ const themeStorage = createCookieSessionStorage({
     sameSite: "lax",
     path: "/",
     httpOnly: true,
+    secrets: ["6jztYdR73Jbq6gJtSmjp"],
   },
 });
 
