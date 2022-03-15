@@ -40,7 +40,7 @@ export default function App() {
       </head>
 
       <body>
-        <nav className="flex h-20 items-center px-24 w-full z-10">
+        <nav className="flex h-20 items-center px-24 w-full z-10 fixed">
           <Link
             to="/"
             className="font-bold text-2xl text-gray-800 dark:text-white"
@@ -61,7 +61,7 @@ export default function App() {
             <li>
               <Link
                 to="/software"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
+                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500 hidden"
               >
                 Software
               </Link>
@@ -69,7 +69,7 @@ export default function App() {
 
             <li>
               <Link
-                to="/software"
+                to="/about"
                 className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
               >
                 About

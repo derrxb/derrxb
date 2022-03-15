@@ -1,11 +1,15 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./app/**/*.tsx", "./app/**/*.jsx", "./app/**/*.js", "./app/**/*.ts"],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class",
+  content: [
+    "./app/**/*.tsx",
+    "./app/**/*.jsx",
+    "./app/**/*.js",
+    "./app/**/*.ts",
+  ],
   theme: {
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      black: "#0D1210",
+      "black-home": "#0D1210",
     }),
     extend: {
       spacing: {

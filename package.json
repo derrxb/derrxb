@@ -32,7 +32,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intersection-observer": "^8.32.5",
-    "remix": "^1.2.3"
+    "remix": "^1.2.3",
+    "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.2.3",
@@ -44,7 +45,6 @@
     "nodemon": "^2.0.15",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19",
     "typescript": "^4.5.5"
   },
   "engines": {

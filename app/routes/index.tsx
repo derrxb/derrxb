@@ -20,7 +20,7 @@ export default function Index() {
     <>
       <div className="flex h-full" ref={ref}>
         <motion.div
-          className="flex w-1/2 items-center justify-center p-8 px-24 dark:bg-black"
+          className="flex w-1/2 items-center justify-center p-8 px-24 dark:bg-black-home"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
