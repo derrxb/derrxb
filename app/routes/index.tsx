@@ -55,6 +55,7 @@ export default function Index() {
 
             <motion.img
               src={coverDark}
+              loading="lazy"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
@@ -70,6 +71,7 @@ export default function Index() {
             />
 
             <motion.img
+              loading="lazy"
               src={coverLight}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
