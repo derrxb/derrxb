@@ -49,7 +49,7 @@ export default function App() {
           </Link>
 
           <ul className="flex ml-auto items-center">
-            <li>
+            <li className="hidden">
               <Link
                 to="/stories"
                 className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
@@ -58,7 +58,7 @@ export default function App() {
               </Link>
             </li>
 
-            <li>
+            <li className="hidden">
               <Link
                 to="/software"
                 className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500 hidden"
@@ -67,7 +67,7 @@ export default function App() {
               </Link>
             </li>
 
-            <li>
+            <li className="hidden">
               <Link
                 to="/about"
                 className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"

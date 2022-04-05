@@ -33,11 +33,11 @@ export default function Index() {
           >
             I capture stories and build software with{" "}
             <motion.span className="text-yellow-500 hover:underline">
-              <Link to="/stories">photography</Link>
+              <Link to="/">photography</Link>
             </motion.span>{" "}
             and
             <motion.span className="text-green-500 pl-2 hover:underline">
-              <Link to="/software">code</Link>
+              <Link to="/">code</Link>
             </motion.span>
             .
           </motion.h1>
