@@ -9,6 +9,7 @@ import {
   Outlet,
   Scripts,
   useLoaderData,
+  useLocation,
 } from "remix";
 import Mode from "./components/mode";
 import ThemeProvider from "./context/theme-context";
@@ -30,6 +31,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export default function App() {
   const { mode } = useLoaderData<LoaderData>();
+  const location = useLocation();
 
   return (
     <html lang="en" className={mode}>
@@ -42,7 +44,13 @@ export default function App() {
 
       <body>
         <ThemeProvider initialTheme={mode}>
-          <nav className="flex h-20 items-center px-24 w-full z-10 fixed">
+          <nav
+            className={`flex h-20 items-center px-28 w-full z-10 ${
+              location.pathname === "/"
+                ? "fixed"
+                : "block bg-white dark:bg-black"
+            }`}
+          >
             <Link
               to="/"
               className="font-bold text-2xl text-gray-800 dark:text-white"
@@ -69,7 +77,7 @@ export default function App() {
                 </Link>
               </li>
 
-              <li className="hidden">
+              <li className="flex">
                 <Link
                   to="/about"
                   className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"

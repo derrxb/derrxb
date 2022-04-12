@@ -33,7 +33,7 @@ export default function Index() {
             animate={{ paddingTop: 0 }}
             transition={{ duration: 1 }}
           >
-            I capture stories and build software with{" "}
+            I tell stories and build software with{" "}
             <motion.span className="text-yellow-500 hover:underline">
               <Link to="/">photography</Link>
             </motion.span>{" "}
