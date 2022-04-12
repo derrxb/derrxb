@@ -11,6 +11,7 @@ import {
   useLoaderData,
 } from "remix";
 import Mode from "./components/mode";
+import ThemeProvider from "./context/theme-context";
 import styles from "./styles/app.css";
 import { getThemeSession } from "./utils/theme.server";
 
@@ -40,50 +41,52 @@ export default function App() {
       </head>
 
       <body>
-        <nav className="flex h-20 items-center px-24 w-full z-10 fixed">
-          <Link
-            to="/"
-            className="font-bold text-2xl text-gray-800 dark:text-white"
-          >
-            DERRXB
-          </Link>
+        <ThemeProvider initialTheme={mode}>
+          <nav className="flex h-20 items-center px-24 w-full z-10 fixed">
+            <Link
+              to="/"
+              className="font-bold text-2xl text-gray-800 dark:text-white"
+            >
+              DERRXB
+            </Link>
 
-          <ul className="flex ml-auto items-center">
-            <li className="hidden">
-              <Link
-                to="/stories"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
-              >
-                Stories
-              </Link>
-            </li>
+            <ul className="flex ml-auto items-center">
+              <li className="hidden">
+                <Link
+                  to="/stories"
+                  className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
+                >
+                  Stories
+                </Link>
+              </li>
 
-            <li className="hidden">
-              <Link
-                to="/software"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500 hidden"
-              >
-                Software
-              </Link>
-            </li>
+              <li className="hidden">
+                <Link
+                  to="/software"
+                  className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500 hidden"
+                >
+                  Software
+                </Link>
+              </li>
 
-            <li className="hidden">
-              <Link
-                to="/about"
-                className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
-              >
-                About
-              </Link>
-            </li>
+              <li className="hidden">
+                <Link
+                  to="/about"
+                  className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
+                >
+                  About
+                </Link>
+              </li>
 
-            <Mode />
-          </ul>
-        </nav>
+              <Mode />
+            </ul>
+          </nav>
 
-        <Outlet />
-        <Scripts />
+          <Outlet />
+          <Scripts />
 
-        {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
+          {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
+        </ThemeProvider>
       </body>
     </html>
   );

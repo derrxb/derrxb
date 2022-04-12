@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "remix";
-import coverDark from "../../public/images/cover-dark.jpg";
-import coverLight from "../../public/images/cover-light.jpg";
+import HeroHomeDark from "~/components/hero-home-dark";
+import HeroHomeLight from "~/components/hero-home-light";
+import useDarkMode from "~/hooks/useDarkMode";
 
 export default function Index() {
   const [ref, inView] = useInView();
+  const mode = useDarkMode();
 
   React.useEffect(() => {
     if (inView) {
@@ -45,39 +47,9 @@ export default function Index() {
 
         <div className="w-1/2">
           <picture className="w-full">
-            <motion.source
-              src={coverDark}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className={"h-screen w-full object-cover hidden dark:inline"}
-            />
-
-            <motion.img
-              src={coverDark}
-              loading="lazy"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className={"h-screen w-full object-cover hidden dark:inline"}
-            />
-
-            <motion.source
-              src={coverLight}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className={"h-screen w-full object-cover dark:hidden"}
-            />
-
-            <motion.img
-              loading="lazy"
-              src={coverLight}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className={"h-screen w-full object-cover dark:hidden"}
-            />
+            <HeroHomeDark />
+            <HeroHomeLight />
+            {console.log(mode)}
           </picture>
         </div>
       </div>

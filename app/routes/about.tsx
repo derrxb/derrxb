@@ -11,7 +11,7 @@ export default function About() {
         I'm a full-stack developer and photographer based in Taipei, Taiwan. I
         build things and tell stories. I have a Master's in Data Science from
         National Tsing Hua University in Hsinchu, Taiwan where I graduated from
-        Professor Von-Wun Soo's AI Lab.
+        Professor Von-Wun Soo's AI
       </p>
 
       <p className="text-xl text-gray-800 dark:text-white pb-4 leading-relaxed">
