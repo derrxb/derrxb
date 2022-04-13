@@ -45,7 +45,7 @@ export default function App() {
       <body>
         <ThemeProvider initialTheme={mode}>
           <nav
-            className={`flex h-20 items-center px-28 w-full z-10 ${
+            className={`flex h-20 items-center px-4 md:px-40 w-full z-10 ${
               location.pathname === "/"
                 ? "fixed"
                 : "block bg-white dark:bg-black"
