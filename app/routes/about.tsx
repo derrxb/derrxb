@@ -29,20 +29,35 @@ export default function About() {
       <div className="divide-dashed divide-gray-200 divide-x-2 w-[480px] self-center divide-y" />
 
       <p className="px-2 w-full text-lg md:text-2xl text-gray-800 dark:text-white pb-4 leading-loose">
-        I build things and tell stories. I have a Master's in Data Science from
-        National Tsing Hua University in Hsinchu, Taiwan where I graduated from
-        Professor Von-Wun Soo's AI
+        I love building things and telling stories. I grew up in San Ignacio,
+        Belize and moved to Taiwan a few years ago to pursue my Master's in Data
+        Science at National Tsing Hua University. I graduated in 2021 from
+        Professor Von-Wun Soo's{" "}
+        <a
+          className="hover:text-yellow-500 hover:underline"
+          href="http://ai.cs.nthu.edu.tw/"
+        >
+          AI Lab
+        </a>
+        .
       </p>
 
       <p className="px-2 w-full text-lg md:text-2xl text-gray-800 dark:text-white pb-4 leading-loose">
-        I'm currently working at Aillio building Roast.World. Previously, I
-        worked at Belizing.com building Belizing Payments. I've worked with both
-        back-end and front-end systems using languages and tools such as Ruby,
-        Typescript, JavaScript, React, Ruby on Rails, and a number of others.
+        I'm currently working at Aillio LTD where I build and maintain{" "}
+        <a
+          className="hover:text-yellow-500 hover:underline font-semibold"
+          href="https://roast.world/"
+        >
+          Roast World
+        </a>
+        . Previously, I worked at Belizing.com where I works on their payments
+        website, Belizing Payments. I have worked on both back-end and front-end
+        systems using languages and tools such as Ruby, Typescript, JavaScript,
+        React, Ruby on Rails, and a number of others.
       </p>
 
       <p className="px-2 w-full text-lg md:text-2xl text-gray-800 dark:text-white pb-4 leading-loose">
-        In my free time, I like to roam to capture stories. I enjoy landscape
+        In my free time, I like to travel to capture stories. I enjoy landscape
         and portrait photography. While I currently don't have any human kids, I
         do have a wonderful little Siamese cat called Lola 🐈 (she's back home
         in Belize) and other cats (in Taiwan) called Dian Dian and Hua Hua.
