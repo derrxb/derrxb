@@ -4,11 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "remix";
 import HeroHomeDark from "~/components/hero-home-dark";
 import HeroHomeLight from "~/components/hero-home-light";
-import useDarkMode from "~/hooks/useDarkMode";
 
 export default function Index() {
   const [ref, inView] = useInView();
-  const mode = useDarkMode();
 
   React.useEffect(() => {
     if (inView) {
@@ -20,22 +18,22 @@ export default function Index() {
 
   return (
     <>
-      <div className="flex h-full" ref={ref}>
+      <div className="h-full w-full grid grid-cols-1 md:grid-cols-2" ref={ref}>
         <motion.div
-          className="flex w-1/2 items-center justify-center p-8 px-24 dark:bg-black-home"
+          className="flex col-span-1 items-center justify-center p-8 px:12 md:px-24 dark:bg-black-home h-[320px] md:h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
         >
           <motion.h1
-            className="m-0 text-6xl font-bold dark:text-white"
+            className="m-0 text-3xl md:text-6xl font-bold dark:text-white"
             initial={{ paddingTop: 48 }}
             animate={{ paddingTop: 0 }}
             transition={{ duration: 1 }}
           >
             I tell stories and build things with{" "}
             <motion.span className="text-yellow-500 hover:underline">
-              <Link to="/">photography</Link>
+              <Link to="/photography">photography</Link>
             </motion.span>{" "}
             and
             <motion.span className="text-green-500 pl-2 hover:underline">
@@ -45,11 +43,10 @@ export default function Index() {
           </motion.h1>
         </motion.div>
 
-        <div className="w-1/2">
+        <div className="col-span-1">
           <picture className="w-full">
             <HeroHomeDark />
             <HeroHomeLight />
-            {console.log(mode)}
           </picture>
         </div>
       </div>

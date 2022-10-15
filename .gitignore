@@ -7,3 +7,4 @@ app/styles
 content/images
 build
 ./build
+.env.local

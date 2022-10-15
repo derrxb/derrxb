@@ -1,6 +1,7 @@
+import dotenv from "dotenv";
 import { renderToString } from "react-dom/server";
-import { RemixServer } from "remix";
 import type { EntryContext } from "remix";
+import { RemixServer } from "remix";
 
 export default function handleRequest(
   request: Request,
@@ -8,6 +9,8 @@ export default function handleRequest(
   responseHeaders: Headers,
   remixContext: EntryContext
 ) {
+  dotenv.config();
+
   let markup = renderToString(
     <RemixServer context={remixContext} url={request.url} />
   );
@@ -16,6 +19,6 @@ export default function handleRequest(
 
   return new Response("<!DOCTYPE html>" + markup, {
     status: responseStatusCode,
-    headers: responseHeaders
+    headers: responseHeaders,
   });
 }
