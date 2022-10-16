@@ -6,7 +6,7 @@ import { getImageProps } from "~/lib/sanity/image-builder";
 
 export const loader: LoaderFunction = async () => {
   const photography = await getClient().fetch<GalleryDocument[]>(`
-  	*[_type == "stories"]{ _id, images[]{ asset-> }}
+  	*[_type == "stories"]{ _id, images[]{ _ref, alt, asset-> }}
   `);
 
   const images = photography?.[0]?.images?.map((image) =>
@@ -43,7 +43,7 @@ const BlurredImage = (props: any) => {
         paddingTop: `calc(100% / ${props.image.aspectRatio})`,
         backgroundRepeat: "no-repeat",
       }}
-      className="relative m-0 w-full bg-black bg-center bg-cover bg-no-repeat"
+      className="relative m-0 w-full bg-black bg-center object-cover object-center bg-no-repeat overflow-hidden"
     >
       {
         <img
@@ -70,8 +70,8 @@ export default function Photography() {
   const urls = useLoaderData();
 
   return (
-    <div>
-      <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="px-8">
+      <main className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {urls.map((image: ReturnType<typeof getImageProps>, index: number) => (
           <BlurredImage key={index} image={image} />
         ))}
