@@ -45,7 +45,7 @@ export default function App() {
       <body>
         <ThemeProvider initialTheme={mode}>
           <nav
-            className={`flex h-20 items-center px-4 md:px-40 w-full z-10 ${
+            className={`flex h-24 items-center px-4 md:px-24 w-full z-10 ${
               location.pathname === "/"
                 ? "fixed"
                 : "block bg-white dark:bg-black"
@@ -55,7 +55,7 @@ export default function App() {
               to="/"
               className="font-bold text-2xl text-gray-800 dark:text-white"
             >
-              DERRXB
+              derrxb
             </Link>
 
             <ul className="flex ml-auto items-center">
@@ -74,15 +74,6 @@ export default function App() {
                   className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500 hidden"
                 >
                   Software
-                </Link>
-              </li>
-
-              <li className="flex">
-                <Link
-                  to="/about"
-                  className="font-semibold text-gray-600 px-4 hover:text-gray-900 dark:text-white dark:hover:text-gray-500"
-                >
-                  About
                 </Link>
               </li>
 

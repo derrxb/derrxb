@@ -26,6 +26,11 @@ export default {
               type: "string",
               title: "Alternative text",
             },
+            {
+              name: "tag",
+              type: "string",
+              title: "Tag",
+            },
           ],
         },
       ],
