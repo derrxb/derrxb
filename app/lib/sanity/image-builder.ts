@@ -1,11 +1,21 @@
 import ImageUrlBuilder from "@sanity/image-url";
-import { GalleryDocument } from "~/@types/content";
+import type { GalleryDocument } from "~/@types/content";
 import { sanityClient } from "./client";
 
 const imageBuilder = ImageUrlBuilder(sanityClient);
 
 export const urlFor = (source: any) => {
   return imageBuilder.image(source);
+};
+
+export type AnnotatedImage = {
+  id: string;
+  lqip?: string;
+  aspectRatio?: string;
+  alt: string;
+  src: string;
+  srcSet: string;
+  sizes: string;
 };
 
 export const getImageProps = (
@@ -19,12 +29,12 @@ export const getImageProps = (
     sizes: Array<string>;
     transformations?: any;
   }
-) => {
+): AnnotatedImage => {
   const averageSize = Math.ceil(widths.reduce((a, s) => a + s) / widths.length);
 
   return {
     id: image.asset._ref,
-    lqip: image.asset.metadata?.lqip,
+    lqip: String(image.asset.metadata?.lqip),
     aspectRatio: (image.asset.metadata?.dimensions as { aspectRatio?: string })
       ?.aspectRatio,
     alt: image.alt,

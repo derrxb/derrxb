@@ -1,8 +1,9 @@
 import clsx from "clsx";
-import { createAnimationState } from "framer-motion/types/render/utils/animation-state";
 import React from "react";
 
-export const BlurredImage = (props: any) => {
+export type AnnotatedImageProps = {};
+
+export const AnnotatedImage = (props: any) => {
   const [imageLoaded, setLoaded] = React.useState(false);
   const imageRef = React.useRef<HTMLImageElement>(null);
 
@@ -12,25 +13,10 @@ export const BlurredImage = (props: any) => {
     }
   }, []);
 
-  const canvasRef = React.useRef<HTMLCanvasElement>(null);
-
-  const annotate = () => {
-    if (!imageRef.current && !canvasRef.current) {
-      console.log("Skipping;");
-      return;
-    }
-
-    const canvas = canvasRef.current;
-    const context = canvas?.getContext("2d") as CanvasRenderingContext2D;
-    context.font = "30px Arial";
-    context?.fillText("Hello", 10, 10);
-  };
-
   return (
     <figure
       style={{
         backgroundImage: `url(${props.image.lqip})`,
-        // paddingTop: `calc(100% / ${props.image.aspectRatio})`,
         backgroundSize: "cover",
       }}
       className={clsx(
@@ -54,11 +40,8 @@ export const BlurredImage = (props: any) => {
         )}
         onLoad={() => {
           setLoaded(true);
-          annotate();
         }}
       />
-
-      <canvas ref={canvasRef} width="300px" height="300px" />
     </figure>
   );
 };

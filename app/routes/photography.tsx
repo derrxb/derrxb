@@ -1,7 +1,8 @@
 import React from "react";
-import { LoaderFunction, useLoaderData } from "remix";
-import { GalleryDocument } from "~/@types/content";
-import { BlurredImage } from "~/components/blurred-image";
+import type { LoaderFunction } from "remix";
+import { useLoaderData } from "remix";
+import type { GalleryDocument } from "~/@types/content";
+import { AnnotatedImage } from "~/components/annotated-image";
 import { getClient } from "~/lib/sanity/client";
 import { getImageProps } from "~/lib/sanity/image-builder";
 
@@ -34,13 +35,13 @@ export default function Photography() {
     <main className="px-8 bg:white dark:bg-black-home">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-1 dark:gap-0">
         {urls.map((image: ReturnType<typeof getImageProps>, index: number) => (
-          <BlurredImage key={index} image={image} />
+          <AnnotatedImage key={index} image={image} />
         ))}
       </div>
 
       <div className="flex flex-col">
         {urls.map((image: ReturnType<typeof getImageProps>, index: number) => (
-          <BlurredImage
+          <AnnotatedImage
             key={index}
             image={image}
             className="max-h-full object-cover"
