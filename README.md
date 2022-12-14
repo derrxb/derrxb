@@ -1,13 +1,12 @@
 **Hi! I'm Derrick (施德睿)**
 
-I'm a full-stack developer and photographer based in Taipei, Taiwan. I build things and tell stories. I have a Master's in Data Science from National Tsing Hua University in Hsinchu, Taiwan where I graduated from Professor Von-Wun Soo's [AI Lab](http://ai.cs.nthu.edu.tw/).
+I am a full-stack software developer and photographer currently working on Roast.World and RoasTime at [Aillio](https://aillio.com/) in Taipei, Taiwan. I hold a Master's degree in Data Science from National Tsing Hua University, where I studied under AI researcher Dr. Von-Wun Soo in his [AI Lab](http://ai.cs.nthu.edu.tw/).
 
-I'm currently working at [Aillio](https://aillio.com/) building [Roast.World](https://roast.world/). Previously, I worked at [Belizing.com](https://belizing.com/) building [Belizing Payments](https://payments.belizing.com/). I've worked with both back-end and front-end systems using languages and tools such as Ruby, Typescript, JavaScript, React, Ruby on Rails, and a number of others.
+I have extensive experience in a variety of front-end and back-end software development frameworks and programming languages, including JavaScript, TypeScript, ReactJS, VueJS, Ruby on Rails, Ruby, and a number of others. In my free time, I enjoy capturing beautiful moments through landscape and portrait photography, and I am the proud owner of several beloved cats.
 
-In my free time, I like to roam to capture stories. I enjoy landscape and portrait photography. While I currently don't have any human kids, I do have a wonderful little Siamese cat called Lola 🐈 (she's back home in Belize) and other cats (in Taiwan) called Dian Dian and Hua Hua.
+Throughout my career, I have been fortunate to gain a reputation for my creative problem-solving abilities, attention to detail, and ability to adapt to new environments and become productive quickly. I am always looking for new challenges and opportunities to grow as a developer and photographer.
 
 You can find me online on my handle **_@derrxb_**. But here are a few links that you might be interested in:
-
 > - [Instagram](https://instagram.com/derrxb) - photos, photos, and more photos 😉
 > - [GitHub](https://github.com/derrxb) [Here] - Projects I'm currently working on
 > - [Derrxb.com](https://derrxb.com) - My personal website for my travels and (hopefully) software development thoughts
