@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { Link } from "remix";
+import { Link } from "@remix-run/react";
 import HeroHomeDark from "~/components/hero-home-dark";
 import HeroHomeLight from "~/components/hero-home-light";
+
+export const loader = () => {
+  return null;
+};
 
 export default function Index() {
   const [ref, inView] = useInView();

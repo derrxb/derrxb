@@ -1,5 +1,9 @@
 import Me from "~/assets/images/me.jpeg";
 
+export const loader = () => {
+  return null;
+};
+
 export default function About() {
   return (
     <div className="px-2 md:px-40 pt-8 md:pt-12 bg-white dark:bg-black flex h-full w-full flex-col dark:text-white overflow-y-auto pb-24">

@@ -1,16 +1,15 @@
+import type { LinksFunction, LoaderFunction } from "remix";
+import { json } from "@remix-run/node";
 import {
-  json,
   Link,
   Links,
-  LinksFunction,
   LiveReload,
-  LoaderFunction,
   Meta,
   Outlet,
   Scripts,
   useLoaderData,
   useLocation,
-} from "remix";
+} from "@remix-run/react";
 import Mode from "./components/mode";
 import ThemeProvider from "./context/theme-context";
 import styles from "./styles/app.css";

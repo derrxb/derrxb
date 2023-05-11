@@ -7,6 +7,10 @@ module.exports = {
     "./app/**/*.ts",
   ],
   theme: {
+    fontFamily: (theme) => ({
+      ...theme("fontFamily"),
+      virgil: ["Virgil", "sans-serif"],
+    }),
     backgroundColor: (theme) => ({
       ...theme("colors"),
       "black-home": "#0D1210",
