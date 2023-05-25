@@ -1,4 +1,5 @@
-import type { LinksFunction, LoaderFunction } from "remix";
+import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import { cssBundleHref } from "@remix-run/css-bundle";
 import { json } from "@remix-run/node";
 import {
   Link,
@@ -7,17 +8,19 @@ import {
   Meta,
   Outlet,
   Scripts,
+  ScrollRestoration,
   useLoaderData,
   useLocation,
 } from "@remix-run/react";
 import Mode from "./components/mode";
 import ThemeProvider from "./context/theme-context";
-import styles from "./styles/app.css";
+import styles from "@app/tailwind.css";
 import { getThemeSession } from "./utils/theme.server";
 
-export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
-};
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles },
+  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+];
 
 type LoaderData = {
   mode: "dark" | "light";
@@ -81,9 +84,12 @@ export default function App() {
           </nav>
 
           <Outlet />
+          <ScrollRestoration />
           <Scripts />
 
-          {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
+          {process.env.NODE_ENV === "development" ? (
+            <LiveReload port={3010} />
+          ) : null}
         </ThemeProvider>
       </body>
     </html>
