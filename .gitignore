@@ -7,3 +7,12 @@ content/images
 build
 ./build
 .env.local
+.cache
+.env
+.vercel
+.output
+
+/build/
+/public/build
+/api/index.js
+/api/index.js.map
