@@ -7,6 +7,5 @@ I have extensive experience in a variety of front-end and back-end software deve
 Throughout my career, I have been fortunate to gain a reputation for my creative problem-solving abilities, attention to detail, and ability to adapt to new environments and become productive quickly. I am always looking for new challenges and opportunities to grow as a developer and photographer.
 
 You can find me online on my handle **_@derrxb_**. But here are a few links that you might be interested in:
-> - [Instagram](https://instagram.com/derrxb) - photos, photos, and more photos 😉
 > - [GitHub](https://github.com/derrxb) [Here] - Projects I'm currently working on
 > - [Derrxb.com](https://derrxb.com) - My personal website for my travels and (hopefully) software development thoughts
