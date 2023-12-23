@@ -35,7 +35,7 @@ export default function Index() {
             animate={{ paddingTop: 0 }}
             transition={{ duration: 1 }}
           >
-            I tell stories and build things with{" "}
+            Hi, I'm Derrick! I tell stories and build things with{" "}
             <motion.span className="text-yellow-500 hover:underline">
               <Link to="/photography">photography</Link>
             </motion.span>{" "}

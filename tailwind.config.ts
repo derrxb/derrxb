@@ -10,7 +10,7 @@ export default {
       virgil: ["Virgil", "sans-serif"],
     }),
     backgroundColor: (value) => ({
-      // ...value.theme("colors"),
+      ...value.theme("colors"),
       "black-home": "#0D1210",
       black: "#121212",
       white: "#fafaf9",
