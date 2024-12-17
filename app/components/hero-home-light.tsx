@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import coverLight from "../../public/images/cover-light.jpg";
+import coverLight from "/images/cover-light.jpg";
 
 export default function HeroHomeLight() {
   return (

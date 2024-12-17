@@ -21,7 +21,7 @@ export const AnnotatedImage = (props: any & AnnotatedImageProps) => {
           backgroundSize: "cover",
         }}
         className={clsx(
-          "relative h-full w-full bg-black bg-center object-cover object-center bg-no-repeat bg-cover overflow-hidden aspect-video",
+          "relative w-full bg-black bg-center object-cover object-center bg-no-repeat bg-cover overflow-hidden aspect-video max-w-5xl",
           props?.className
         )}
       >
@@ -36,7 +36,7 @@ export const AnnotatedImage = (props: any & AnnotatedImageProps) => {
           }}
           src={props.image.src}
           className={clsx(
-            "absolute top-0 left-0 w-full h-full object-cover object-center aspect-video",
+            "absolute top-0 left-0 w-full max-w-5xl object-cover object-center aspect-video",
             props?.className
           )}
           onLoad={() => {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import coverDark from "../../public/images/cover-dark.jpg";
+import coverDark from "/images/cover-dark.jpg";
 
 export default function HeroHomeDark() {
   return (

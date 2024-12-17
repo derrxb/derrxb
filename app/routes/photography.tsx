@@ -1,6 +1,6 @@
 import React from "react";
-import type { LoaderFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import type { LoaderFunction } from "react-router";
+import { useLoaderData } from "react-router";
 import type { GalleryDocument } from "~/@types/content";
 import { AnnotatedImage } from "~/components/annotated-image";
 import { getClient } from "~/lib/sanity/client";

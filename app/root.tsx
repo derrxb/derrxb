@@ -1,34 +1,42 @@
-import type { LinksFunction, LoaderFunction } from "@remix-run/node";
-import { cssBundleHref } from "@remix-run/css-bundle";
-import { json } from "@remix-run/node";
+import Mode from "./components/mode";
+import ThemeProvider from "./context/theme-context";
+import { getThemeSession } from "./utils/theme.server";
 import {
+  isRouteErrorResponse,
   Link,
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
   useLoaderData,
   useLocation,
-} from "@remix-run/react";
-import Mode from "./components/mode";
-import ThemeProvider from "./context/theme-context";
-import styles from "@app/tailwind.css";
-import { getThemeSession } from "./utils/theme.server";
+} from "react-router";
+import type { Route } from "./+types/root";
+import styles from "@app/tailwind.css?url";
 
-export const links: LinksFunction = () => [
+export const links: Route.LinksFunction = () => [
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossOrigin: "anonymous",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+  },
   { rel: "stylesheet", href: styles },
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
 type LoaderData = {
   mode: "dark" | "light";
 };
-export const loader: LoaderFunction = async ({ request }) => {
+
+export const loader = async ({ request }: Route.LoaderArgs) => {
   const themeSession = await getThemeSession(request);
 
-  return json({ mode: themeSession.getTheme() } as LoaderData);
+  return { mode: themeSession.getTheme() };
 };
 
 export default function App() {
@@ -86,12 +94,37 @@ export default function App() {
           <Outlet />
           <ScrollRestoration />
           <Scripts />
-
-          {process.env.NODE_ENV === "development" ? (
-            <LiveReload port={3010} />
-          ) : null}
         </ThemeProvider>
       </body>
     </html>
+  );
+}
+
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  let message = "Oops!";
+  let details = "An unexpected error occurred.";
+  let stack: string | undefined;
+
+  if (isRouteErrorResponse(error)) {
+    message = error.status === 404 ? "404" : "Error";
+    details =
+      error.status === 404
+        ? "The requested page could not be found."
+        : error.statusText || details;
+  } else if (import.meta.env.DEV && error && error instanceof Error) {
+    details = error.message;
+    stack = error.stack;
+  }
+
+  return (
+    <main className="pt-16 p-4 container mx-auto">
+      <h1>{message}</h1>
+      <p>{details}</p>
+      {stack && (
+        <pre className="w-full p-4 overflow-x-auto">
+          <code>{stack}</code>
+        </pre>
+      )}
+    </main>
   );
 }

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { Link } from "@remix-run/react";
+import { Link } from "react-router";
 import HeroHomeDark from "~/components/hero-home-dark";
 import HeroHomeLight from "~/components/hero-home-light";
 
